@@ -62,6 +62,8 @@ define('NONCE_SALT', 'pon aquí tu frase aleatoria'); // Cambia esto por tu fras
 $table_prefix  = 'wp_';
 
 
+
+
 /**
  * Para desarrolladores: modo debug de WordPress.
  *
