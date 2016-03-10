@@ -23,10 +23,65 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url('../images/pattern-bg.jpg');
+  background-position: center top;
+  background-size: 100% auto;
+  border-top: solid (10em/16) #FD0000;
 }
 
 .wrapper {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.social{
+  display: block;
+  li{
+    float: left;
+    list-style: none;
+    margin-right: (10em/16);
+    .icon{
+      width: (44em/16);
+      height: (44em/16);
+      background-image: url('../images/social-icon.png');
+      display: block;
+
+      &.oleo{
+        background-position: 0px -53px;
+        &:hover{
+          background-position: 0 0;
+        }
+      }
+
+      &.tripadvisor{
+        background-position: -55px -53px;
+        &:hover{
+          background-position: -55px  0;
+        }
+      }
+
+      &.google{
+        background-position: -109px -53px;
+        &:hover{
+          background-position: -109px  0;
+        }
+      }
+
+      &.facebook{
+        background-position: -162px -53px;
+        &:hover{
+          background-position: -162px  0;
+        }
+      }
+
+
+    }
+  }
+
 }

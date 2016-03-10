@@ -10,11 +10,47 @@
   font-style: normal; }
 html, body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+body {
+  background-image: url("../images/pattern-bg.jpg");
+  background-position: center top;
+  background-size: 100% auto;
+  border-top: solid 0.625em #FD0000; }
 
 .wrapper {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto; }
+
+.social {
+  display: block; }
+  .social li {
+    float: left;
+    list-style: none;
+    margin-right: 0.625em; }
+    .social li .icon {
+      width: 2.75em;
+      height: 2.75em;
+      background-image: url("../images/social-icon.png");
+      display: block; }
+      .social li .icon.oleo {
+        background-position: 0px -53px; }
+        .social li .icon.oleo:hover {
+          background-position: 0 0; }
+      .social li .icon.tripadvisor {
+        background-position: -55px -53px; }
+        .social li .icon.tripadvisor:hover {
+          background-position: -55px  0; }
+      .social li .icon.google {
+        background-position: -109px -53px; }
+        .social li .icon.google:hover {
+          background-position: -109px  0; }
+      .social li .icon.facebook {
+        background-position: -162px -53px; }
+        .social li .icon.facebook:hover {
+          background-position: -162px  0; }
 
 /*# sourceMappingURL=style.css.map */
