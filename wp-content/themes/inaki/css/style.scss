@@ -33,7 +33,12 @@ body {
   background-size: 100% auto;
   border-top: solid (10em/16) #FD0000;
 }
-
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
 .wrapper {
   width: 90%;
   max-width: 1440px;
