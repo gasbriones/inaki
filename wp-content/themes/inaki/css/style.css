@@ -28,14 +28,17 @@ body {
 
 .wrapper {
   width: 90%;
-  max-width: 1440px;
+  max-width: 1380px;
   margin: 0 auto; }
 
 #header {
   margin-top: 2.875em; }
+  #header .menu {
+    margin-top: 0.625em; }
 
 .social {
-  display: block; }
+  display: block;
+  margin-top: 0.625em; }
   .social li {
     float: left;
     list-style: none;

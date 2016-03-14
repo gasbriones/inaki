@@ -41,18 +41,24 @@ body {
 }
 .wrapper {
   width: 90%;
-  max-width: 1440px;
+  max-width: 1380px;
   margin: 0 auto;
 }
 
 
 #header{
   margin-top:(46em/16);
+
+  .menu{
+    margin-top: (10em/16);
+  }
 }
+
 
 
 .social{
   display: block;
+  margin-top: (10em/16);
   li{
     float: left;
     list-style: none;
@@ -90,8 +96,6 @@ body {
           background-position: -162px  0;
         }
       }
-
-
     }
   }
 

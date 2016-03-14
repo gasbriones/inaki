@@ -1,3 +1,12 @@
+@media screen and (max-width: 35.5em) {
+  .social {
+    display: table;
+    margin: 30px auto 0; } }
+@media screen and (max-width: 64em) {
+  .logo {
+    float: right; }
 
+  .menu {
+    float: left; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */
