@@ -33,8 +33,20 @@ body {
 
 #header {
   margin-top: 2.875em; }
+  #header .logo a {
+    width: 12.8125em;
+    height: 3.9375em;
+    background: url("../images/logo.png");
+    display: block;
+    text-indent: -9999px; }
   #header .menu {
     margin-top: 0.625em; }
+    #header .menu a {
+      width: 2.3125em;
+      height: 2.75em;
+      background: url("../images/mobile-menu.png");
+      display: block;
+      text-indent: -9999px; }
 
 .social {
   display: block;

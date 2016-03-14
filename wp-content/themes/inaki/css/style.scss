@@ -49,8 +49,24 @@ body {
 #header{
   margin-top:(46em/16);
 
+  .logo{
+    a{
+      width: (205em/16);
+      height: (63em/16);
+      background: url("../images/logo.png");
+      display: block;
+      text-indent:-9999px;
+    }
+  }
   .menu{
     margin-top: (10em/16);
+    a{
+      width: (37em/16);
+      height: (44em/16);
+      background: url("../images/mobile-menu.png");
+      display: block;
+      text-indent:-9999px;
+    }
   }
 }
 
