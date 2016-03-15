@@ -1,11 +1,13 @@
 @font-face {
-  font-family: 'eurostile';
-  src: url("../fonts/eurostile.eot?#iefix") format("embedded-opentype"), url("../fonts/eurostile.woff") format("woff"), url("../fonts/eurostile.ttf") format("truetype"), url("../fonts/eurostile.svg#AGaramondPro-Regular") format("svg");
+  font-family: 'bilbao';
+  src: url("../fonts/bilbao-webfont.eot");
+  src: url("../fonts/bilbao-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bilbao-webfont.woff2") format("woff2"), url("../fonts/bilbao-webfont.woff") format("woff"), url("../fonts/bilbao-webfont.ttf") format("truetype"), url("../fonts/bilbao-webfont.svg#bilbaoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'myriad';
-  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-family: 'andralis';
+  src: url("../fonts/andralisndosf-webfont.eot");
+  src: url("../fonts/andralisndosf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/andralisndosf-webfont.woff2") format("woff2"), url("../fonts/andralisndosf-webfont.woff") format("woff"), url("../fonts/andralisndosf-webfont.ttf") format("truetype"), url("../fonts/andralisndosf-webfont.svg#andralis_nd_osfregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 html, body {
@@ -82,7 +84,7 @@ body {
 
 .menu-wrapper {
   background: url("../images/pattern-bg-verde.jpg");
-  background-size: cover;
+  background-size: auto 25%;
   position: relative; }
   .menu-wrapper:before {
     content: "";
@@ -99,5 +101,22 @@ body {
   margin-top: 0.625em; }
   .page-tpl #header .menu a {
     background: url("../images/mobile-menu-white.png"); }
+
+.page-title {
+  font-family: bilbao;
+  font-size: 1.875em;
+  margin-top: 2em;
+  margin-bottom: 1.33333em; }
+
+.paragraph {
+  font-family: andralis;
+  margin: 3.125em 7.5em;
+  line-height: 1.375em; }
+
+.section-img {
+  position: relative;
+  box-shadow: 10px 25px 40px -16px #000;
+  width: 115%;
+  z-index: 999; }
 
 /*# sourceMappingURL=style.css.map */
