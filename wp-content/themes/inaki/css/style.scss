@@ -38,6 +38,13 @@ body {
   background-size: 100% auto;
   border-top: solid (10em/16) #FD0000;
 }
+
+.site{
+  margin: 0;
+  box-sizing: border-box;
+  padding-left: (30em/16);
+}
+
 .left{
   float: left;
 }
@@ -45,8 +52,8 @@ body {
   float: right;
 }
 .wrapper {
-  width: 90%;
-  max-width: 1380px;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   height: 100%;
 }
@@ -176,4 +183,29 @@ body {
   box-shadow: 10px 25px 40px -16px #000;
   width: 115%;
   z-index: 999;
+
+  &:before{
+    position:absolute;
+    top:38%;
+    right: -46%;
+    content: "";
+    z-index: 99999;
+  }
+
+  &.history-img-1{
+
+    &:before{
+      width: (338em/16);
+      height: (146em/16);
+      background: url("../images/history-img-legend-1.png");
+    }
+
+  }
+  &.history-img-2{
+    &:before{
+      width: (377em/16);
+      height: (127em/16);
+      background: url("../images/history-img-legend-2.png");
+    }
+  }
 }
