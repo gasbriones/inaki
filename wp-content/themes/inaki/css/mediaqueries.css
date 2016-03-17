@@ -1,12 +1,46 @@
 @media screen and (max-width: 35.5em) {
   .social {
     display: table;
-    margin: 30px auto 0; } }
+    margin: 30px auto 0; }
+
+  .content {
+    margin: 0 3%; }
+    .content .page-title {
+      font-size: 1.5em;
+      margin: 0.41667em 0 0; } }
+@media screen and (max-width: 48em) {
+  .menu-wrapper {
+    background: none; }
+    .menu-wrapper:before {
+      background: none; }
+
+  .page-tpl #header .menu a {
+    background: url("../images/mobile-menu.png"); }
+
+  .page-tpl #header .logo a {
+    background: url("../images/logo.png"); }
+
+  .section-img {
+    width: 100%; }
+    .section-img:before {
+      display: none; }
+
+  .wines-list {
+    margin-left: 0;
+    margin-right: 0; }
+    .wines-list .wines-details {
+      margin: 0 15%; } }
 @media screen and (max-width: 64em) {
   .logo {
     float: right; }
 
   .menu {
-    float: left; } }
+    float: left; }
+
+  .section-img.history-img-1::before {
+    width: 45%; }
+
+  .section-img.history-img-2::before {
+    width: 45%; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */

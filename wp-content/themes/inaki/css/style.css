@@ -23,8 +23,7 @@ body {
 
 .site {
   margin: 0;
-  box-sizing: border-box;
-  padding-left: 1.875em; }
+  box-sizing: border-box; }
 
 .left {
   float: left; }
@@ -37,6 +36,9 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   height: 100%; }
+
+.wrapper-index {
+  width: 90%; }
 
 #header {
   margin-top: 2.875em; }
@@ -74,15 +76,15 @@ body {
       .social li .icon.tripadvisor {
         background-position: -55px -53px; }
         .social li .icon.tripadvisor:hover {
-          background-position: -55px  0; }
+          background-position: -55px 0; }
       .social li .icon.google {
         background-position: -109px -53px; }
         .social li .icon.google:hover {
-          background-position: -109px  0; }
+          background-position: -109px 0; }
       .social li .icon.facebook {
         background-position: -162px -53px; }
         .social li .icon.facebook:hover {
-          background-position: -162px  0; }
+          background-position: -162px 0; }
 
 .site {
   height: 100%; }
@@ -115,27 +117,47 @@ body {
 
 .paragraph {
   font-family: andralis;
-  margin: 3.125em 7.5em;
+  margin: 3.125em 9%;
   line-height: 1.375em; }
 
 .section-img {
   position: relative;
   box-shadow: 10px 25px 40px -16px #000;
-  width: 115%;
+  width: 125%;
   z-index: 999; }
   .section-img:before {
     position: absolute;
     top: 38%;
-    right: -46%;
+    right: -50%;
     content: "";
-    z-index: 99999; }
+    z-index: 99999;
+    background-size: contain !important; }
   .section-img.history-img-1:before {
     width: 21.125em;
     height: 9.125em;
-    background: url("../images/history-img-legend-1.png"); }
+    background: url("../images/history-img-legend-1.png") no-repeat; }
   .section-img.history-img-2:before {
     width: 23.5625em;
     height: 7.9375em;
-    background: url("../images/history-img-legend-2.png"); }
+    background: url("../images/history-img-legend-2.png") no-repeat; }
+
+.content {
+  box-sizing: border-box;
+  margin: 0 7%; }
+
+.wines-list {
+  margin: 3.125em 10% 0 20%;
+  font-family: andralis; }
+  .wines-list > li {
+    border-bottom: solid 1px #000000;
+    margin-bottom: 1.25em; }
+    .wines-list > li:last-child {
+      border-bottom: none; }
+  .wines-list .wines-details .wine-title {
+    color: #ED1C24;
+    font-size: 1.5em;
+    font-weight: bold; }
+  .wines-list .wines-details .wine-description p {
+    margin: 1.25em 0; }
 
 /*# sourceMappingURL=style.css.map */

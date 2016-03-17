@@ -39,18 +39,19 @@ body {
   border-top: solid (10em/16) #FD0000;
 }
 
-.site{
+.site {
   margin: 0;
   box-sizing: border-box;
-  padding-left: (30em/16);
 }
 
-.left{
+.left {
   float: left;
 }
-.right{
+
+.right {
   float: right;
 }
+
 .wrapper {
   width: 100%;
   max-width: 1440px;
@@ -58,87 +59,88 @@ body {
   height: 100%;
 }
 
+.wrapper-index {
+  width: 90%;
+}
 
-#header{
-  margin-top:(46em/16);
+#header {
+  margin-top: (46em/16);
 
-  .logo{
-    a{
+  .logo {
+    a {
       width: (205em/16);
       height: (63em/16);
       background: url("../images/logo.png");
       display: block;
-      text-indent:-9999px;
+      text-indent: -9999px;
     }
   }
-  .menu{
+  .menu {
     margin-top: (10em/16);
-    a{
+    a {
       width: (37em/16);
       height: (44em/16);
       background: url("../images/mobile-menu.png");
       display: block;
-      text-indent:-9999px;
+      text-indent: -9999px;
     }
   }
 }
 
-
-
-.social{
+.social {
   display: block;
   margin-top: (10em/16);
-  li{
+  li {
     float: left;
     list-style: none;
     margin-right: (10em/16);
-    .icon{
+    .icon {
       width: (44em/16);
       height: (44em/16);
       background-image: url('../images/social-icon.png');
       display: block;
 
-      &.oleo{
+      &.oleo {
         background-position: 0px -53px;
-        &:hover{
+        &:hover {
           background-position: 0 0;
         }
       }
 
-      &.tripadvisor{
+      &.tripadvisor {
         background-position: -55px -53px;
-        &:hover{
-          background-position: -55px  0;
+        &:hover {
+          background-position: -55px 0;
         }
       }
 
-      &.google{
+      &.google {
         background-position: -109px -53px;
-        &:hover{
-          background-position: -109px  0;
+        &:hover {
+          background-position: -109px 0;
         }
       }
 
-      &.facebook{
+      &.facebook {
         background-position: -162px -53px;
-        &:hover{
-          background-position: -162px  0;
+        &:hover {
+          background-position: -162px 0;
         }
       }
     }
   }
 }
 
-.site{
+.site {
   height: 100%;
 }
 
-.menu-wrapper{
+.menu-wrapper {
   background: url("../images/pattern-bg-verde.jpg");
   background-size: auto 25%;
   position: relative;
 
-  &:before{
+  &:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -149,63 +151,94 @@ body {
   }
 }
 
-.page-tpl{
-  #header{
-    .logo{
-      a{
+.page-tpl {
+  #header {
+    .logo {
+      a {
         background: url("../images/logo-white.png");
       }
     }
-    .menu{
+    .menu {
       margin-top: (10em/16);
-      a{
+      a {
         background: url("../images/mobile-menu-white.png");
       }
     }
   }
 }
 
-.page-title{
+.page-title {
   font-family: bilbao;
   font-size: (30em/16);
   margin-top: (60em/30);
   margin-bottom: (40em/30);
 }
 
-.paragraph{
+.paragraph {
   font-family: andralis;
-  margin: (50em/16) (120em/16);
+  margin: (50em/16) 9%;
   line-height: (22em/16);
 }
 
-.section-img{
+.section-img {
   position: relative;
   box-shadow: 10px 25px 40px -16px #000;
-  width: 115%;
+  width: 125%;
   z-index: 999;
 
-  &:before{
-    position:absolute;
-    top:38%;
-    right: -46%;
+  &:before {
+    position: absolute;
+    top: 38%;
+    right: -50%;
     content: "";
     z-index: 99999;
+    background-size: contain !important;
   }
 
-  &.history-img-1{
+  &.history-img-1 {
 
-    &:before{
+    &:before {
       width: (338em/16);
       height: (146em/16);
-      background: url("../images/history-img-legend-1.png");
+      background: url("../images/history-img-legend-1.png") no-repeat;
     }
 
   }
-  &.history-img-2{
-    &:before{
+  &.history-img-2 {
+    &:before {
       width: (377em/16);
       height: (127em/16);
-      background: url("../images/history-img-legend-2.png");
+      background: url("../images/history-img-legend-2.png") no-repeat;
+    }
+  }
+}
+
+.content {
+  box-sizing: border-box;
+  margin: 0 7%;
+}
+
+.wines-list {
+  margin: (50em/16) 10% 0 20%;
+  font-family: andralis;
+  >li{
+    border-bottom: solid 1px #000000;
+    margin-bottom: (20em/16);
+    &:last-child{
+      border-bottom:none;
+    }
+  }
+  .wines-details {
+    .wine-title {
+      color: #ED1C24;
+      font-size: (24em/16);
+      font-weight: bold;
+    }
+
+    .wine-description{
+      p{
+        margin: (20em/16) 0;
+      }
     }
   }
 }

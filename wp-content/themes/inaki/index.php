@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
-  <div class="wrapper clearfix">
+  <div class="wrapper wrapper-index clearfix">
     <?php get_template_part('content-header'); ?>
     <section id="main" class="clearfix">
       <div class="grid-3-center">
