@@ -218,7 +218,7 @@ body {
   margin: 0 7%;
 }
 
-.wines-list {
+.products-list {
   margin: (50em/16) 10% 0 20%;
   font-family: andralis;
   >li{
@@ -228,14 +228,14 @@ body {
       border-bottom:none;
     }
   }
-  .wines-details {
-    .wine-title {
+  .products-details {
+    .product-title {
       color: #ED1C24;
       font-size: (24em/16);
       font-weight: bold;
     }
 
-    .wine-description{
+    .product-description{
       p{
         margin: (20em/16) 0;
       }

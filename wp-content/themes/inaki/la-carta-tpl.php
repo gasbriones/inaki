@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: la bodega
+Template Name: la carta
 */
 
 $args = array(
-    'cat' => 2,
+    'cat' => 3,
     'order' => 'ASC'
 );
 
@@ -26,7 +26,7 @@ get_header(); ?>
                             <?php the_content(); ?>
                         </article>
                         <div class="section-img">
-                            <img src="<?php echo the_field('imagen_1_la_bodega') ?>"/>
+                            <img src="<?php echo the_field('imagen_1_la_carta') ?>"/>
                         </div>
                         <div class="products">
                             <ul class="products-list">

@@ -145,19 +145,19 @@ body {
   box-sizing: border-box;
   margin: 0 7%; }
 
-.wines-list {
+.products-list {
   margin: 3.125em 10% 0 20%;
   font-family: andralis; }
-  .wines-list > li {
+  .products-list > li {
     border-bottom: solid 1px #000000;
     margin-bottom: 1.25em; }
-    .wines-list > li:last-child {
+    .products-list > li:last-child {
       border-bottom: none; }
-  .wines-list .wines-details .wine-title {
+  .products-list .products-details .product-title {
     color: #ED1C24;
     font-size: 1.5em;
     font-weight: bold; }
-  .wines-list .wines-details .wine-description p {
+  .products-list .products-details .product-description p {
     margin: 1.25em 0; }
 
 /*# sourceMappingURL=style.css.map */
