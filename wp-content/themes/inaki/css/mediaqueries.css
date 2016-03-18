@@ -19,7 +19,7 @@
     .menu-wrapper:before {
       background: none; }
 
-  .page-tpl #header .menu a {
+  .page-tpl #header .menu-icon a {
     background: url("../images/mobile-menu.png"); }
 
   .page-tpl #header .logo a {
@@ -42,7 +42,7 @@
   .logo {
     float: right; }
 
-  .menu {
+  .menu-icon {
     float: left; }
 
   .section-img.history-img-1::before {

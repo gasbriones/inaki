@@ -265,7 +265,7 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     font-size: (18em/16);
-    line-height: (40em/18);
+    line-height: (45em/18);
     display: block;
   }
 
@@ -278,8 +278,11 @@ body {
 }
 
 #menu-mobile-menu{
-  margin-left: 20%;
+  margin-top: (20em/16);
   li{
     border-bottom: dotted 2px #B24242;
+    a{
+      margin-left: 20%;
+    }
   }
 }
