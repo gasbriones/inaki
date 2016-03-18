@@ -179,10 +179,17 @@ body {
   .mobile-menu-wrapper a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 1.125em; }
+    font-size: 1.125em;
+    line-height: 2.22222em;
+    display: block; }
   .mobile-menu-wrapper .close {
     line-height: 3.9375em; }
   .mobile-menu-wrapper .logo {
     margin-left: 20%; }
+
+#menu-mobile-menu {
+  margin-left: 20%; }
+  #menu-mobile-menu li {
+    border-bottom: dotted 2px #B24242; }
 
 /*# sourceMappingURL=style.css.map */
