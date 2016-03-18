@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
+  <?php include 'menu-tpl.php'?>
   <div class="wrapper wrapper-index clearfix">
     <?php get_template_part('content-header'); ?>
     <section id="main" class="clearfix">

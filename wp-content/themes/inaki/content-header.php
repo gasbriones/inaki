@@ -4,7 +4,7 @@
       <div class="logo left">
         <a href="<?php echo get_site_url(); ?>">ir al home</a>
       </div>
-      <div class="menu right">
+      <div class="menu-icon right">
         <a href="#">menu</a>
       </div>
     </div>
