@@ -30,7 +30,6 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
 }
 
 body {
@@ -40,7 +39,6 @@ body {
   border-top: solid (10em/16) #FD0000;
   position: relative;
 }
-
 .site {
   margin: 0;
   box-sizing: border-box;
@@ -251,21 +249,22 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 40%;
   height: 100%;
   min-height: 100%;
   background: url("../images/pattern-bg-rojo.jpg");
   background-size: cover;
   text-transform: uppercase;
-  [class*="grid"]{
-    margin: 0;
-  }
+  margin: 0;
+  width: 40%;
+
   .buttons-nav{
     margin-top: (46em/16);
   }
 
   a{
     color: #FFFFFF;
+    text-decoration: none;
+    font-size: (18em/16);
   }
 
   .close{
