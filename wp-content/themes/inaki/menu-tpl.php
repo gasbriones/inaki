@@ -13,7 +13,9 @@
         <?php wp_nav_menu(array('theme_location' => 'mobile-menu')); ?>
         <div class="contact grid-3-center">
             <div class="col-9_lg-9_md-9_sm-9_xs-8">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/contacto.png" alt="Iñaki restaurante contacto">
+                <a href="tel:43845497">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/contacto.png" alt="Iñaki restaurante contacto">
+                </a>
             </div>
         </div>
     </div>

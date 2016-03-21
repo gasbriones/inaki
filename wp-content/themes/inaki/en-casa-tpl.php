@@ -16,7 +16,14 @@ get_header(); ?>
             <section class="content">
                 <h2 class="page-title"><?php the_title(); ?></h2>
                 <div class="clearfix">
-                    en casa
+                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                        <div class="section-img">
+                            <img src="<?php echo the_field('imagen_1_en_casa')?>"/>
+                        </div>
+                        <article class="paragraph">
+                            <?php the_content(); ?>
+                        </article>
+                    <?php endwhile; endif; ?>
                 </div>
             </section>
         </div>

@@ -359,3 +359,8 @@ body {
 .contact{
   margin-top: (60em/16);
 }
+
+.acf-map {
+ @include aspect-ratio(16, 9);
+}
+
