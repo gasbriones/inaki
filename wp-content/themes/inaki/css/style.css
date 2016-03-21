@@ -183,7 +183,7 @@ body {
     text-decoration: none;
     font-size: 1.125em;
     line-height: 2.5em;
-    display: block; }
+    display: table; }
   .mobile-menu-wrapper .close {
     font-size: 0.875em;
     line-height: 4.5em;
@@ -221,6 +221,17 @@ body {
   .icon.icon-inaki:before {
     top: 0.5em;
     background-position: 0 -26px; }
+  .icon.icon-inaki a {
+    position: relative; }
+    .icon.icon-inaki a:after {
+      content: "EN CASA";
+      position: absolute;
+      top: 0;
+      right: -215%;
+      top: 0;
+      width: 200%;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      font-weight: bold; }
   .icon.icon-close:before {
     top: 1.125em;
     left: -80%;
