@@ -1,8 +1,7 @@
 <?php
 $args = array(
   'cat' => 3,
-  'orderby' => 'rand',
-  'numberposts' => '1'
+  'orderby' => 'rand', 'posts_per_page' =>1
 );
 
 $query = new WP_Query($args);
@@ -21,8 +20,10 @@ get_header();
           <?php
             if ($query->have_posts()):
               while ($query->have_posts()):$query->the_post(); ?>
-                <a href="#">
+                <a href="#" class="random-img">
                   <img src="<?php echo the_field('imagen_plato') ?>"/>
+                  <span class="random-title"><?php echo the_title() ?></span>
+                  <span class="random-more">Ver más platos >></span>
                 </a>
           <?php endwhile; endif;?>
         </div>
