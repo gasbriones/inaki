@@ -15,7 +15,13 @@
       margin-left: 0; }
 
   #menu-mobile-menu li a {
-    margin-left: 20%; } }
+    margin-left: 20%; }
+
+  .icon-close {
+    margin-top: 0.9375em !important; }
+    .icon-close:before {
+      top: -0.3125em !important;
+      left: 30% !important; } }
 @media screen and (max-width: 48em) {
   .menu-wrapper {
     background: none; }

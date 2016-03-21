@@ -309,8 +309,8 @@ body {
     content: "";
     top: 0;
     left: 3%;
-    background: url("../images/menu-icons.png");
-    width: (22em/16);
+    background: url("../images/menu-icons.png") no-repeat;
+    width: (24em/16);
     height: (26em/16);
   }
 
@@ -354,4 +354,8 @@ body {
   .mobile-menu-wrapper{
     width: 100%;
   }
+}
+
+.contact{
+  margin-top: (60em/16);
 }
