@@ -12,7 +12,10 @@
   .mobile-menu-wrapper {
     width: 100% !important; }
     .mobile-menu-wrapper .logo {
-      margin-left: 0; } }
+      margin-left: 0; }
+
+  #menu-mobile-menu li a {
+    margin-left: 20%; } }
 @media screen and (max-width: 48em) {
   .menu-wrapper {
     background: none; }
@@ -49,6 +52,9 @@
     width: 45%; }
 
   .section-img.history-img-2::before {
-    width: 45%; } }
+    width: 45%; }
+
+  .logo {
+    margin-left: 0 !important; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */

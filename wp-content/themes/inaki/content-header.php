@@ -10,10 +10,10 @@
     </div>
     <div class="col-9_lg-8_md-8_sm-7_xs-12">
       <ul class="social clearfix">
-        <li><a href="#" class="icon oleo"></a></li>
-        <li><a href="#" class="icon tripadvisor"></a></li>
-        <li><a href="#" class="icon google"></a></li>
-        <li><a href="#" class="icon facebook"></a></li>
+        <li><a href="#" class="social-icon oleo"></a></li>
+        <li><a href="#" class="social-icon tripadvisor"></a></li>
+        <li><a href="#" class="social-icon google"></a></li>
+        <li><a href="#" class="social-icon facebook"></a></li>
       </ul>
     </div>
   </div>

@@ -4,7 +4,9 @@ Template Name: la historia
 */
 get_header(); ?>
 <body <?php body_class('page-tpl'); ?>>
+
 <div class="wrapper clearfix">
+    <?php include 'menu-tpl.php'?>
     <div class="grid-reverse site">
         <div class="col-5_lg-5_md-5_sm-12_xs-12 menu-wrapper">
             <?php get_template_part('menu'); ?>
@@ -35,5 +37,6 @@ get_header(); ?>
         </div>
     </div>
 </div>
+<?php get_footer();?>
 </body>
 </html>

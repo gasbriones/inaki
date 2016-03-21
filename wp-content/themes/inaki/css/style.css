@@ -13,7 +13,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 body {
   background-image: url("../images/pattern-bg.jpg");
@@ -65,26 +66,26 @@ body {
     float: left;
     list-style: none;
     margin-right: 0.625em; }
-    .social li .icon {
+    .social li .social-icon {
       width: 2.75em;
       height: 2.75em;
       background-image: url("../images/social-icon.png");
       display: block; }
-      .social li .icon.oleo {
+      .social li .social-icon.oleo {
         background-position: 0px -53px; }
-        .social li .icon.oleo:hover {
+        .social li .social-icon.oleo:hover {
           background-position: 0 0; }
-      .social li .icon.tripadvisor {
+      .social li .social-icon.tripadvisor {
         background-position: -55px -53px; }
-        .social li .icon.tripadvisor:hover {
+        .social li .social-icon.tripadvisor:hover {
           background-position: -55px 0; }
-      .social li .icon.google {
+      .social li .social-icon.google {
         background-position: -109px -53px; }
-        .social li .icon.google:hover {
+        .social li .social-icon.google:hover {
           background-position: -109px 0; }
-      .social li .icon.facebook {
+      .social li .social-icon.facebook {
         background-position: -162px -53px; }
-        .social li .icon.facebook:hover {
+        .social li .social-icon.facebook:hover {
           background-position: -162px 0; }
 
 .site {
@@ -92,7 +93,7 @@ body {
 
 .menu-wrapper {
   background: url("../images/pattern-bg-verde.jpg");
-  background-size: auto 25%;
+  background-size: contain;
   position: relative; }
   .menu-wrapper:before {
     content: "";
@@ -166,14 +167,15 @@ body {
   color: #FFFFFF;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -100%;
   height: 100%;
   min-height: 100%;
   background: url("../images/pattern-bg-rojo.jpg");
-  background-size: cover;
+  background-size: contain;
   text-transform: uppercase;
   margin: 0;
-  width: 40%; }
+  width: 45%;
+  z-index: 999999; }
   .mobile-menu-wrapper .buttons-nav {
     margin-top: 2.875em; }
   .mobile-menu-wrapper a {
@@ -183,15 +185,48 @@ body {
     line-height: 2.5em;
     display: block; }
   .mobile-menu-wrapper .close {
-    line-height: 3.9375em; }
+    font-size: 0.875em;
+    line-height: 4.5em;
+    cursor: pointer; }
   .mobile-menu-wrapper .logo {
     margin-left: 20%; }
+  .mobile-menu-wrapper:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.625em;
+    left: 0;
+    top: -0.625em;
+    background: #ED1C24; }
 
 #menu-mobile-menu {
   margin-top: 1.25em; }
   #menu-mobile-menu li {
     border-bottom: dotted 2px #B24242; }
     #menu-mobile-menu li a {
-      margin-left: 20%; }
+      margin-left: 13%; }
+
+.icon {
+  position: relative; }
+  .icon:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 3%;
+    background: url("../images/menu-icons.png");
+    width: 1.375em;
+    height: 1.625em; }
+  .icon.icon-history:before {
+    top: 0.5em; }
+  .icon.icon-inaki:before {
+    top: 0.5em;
+    background-position: 0 -26px; }
+  .icon.icon-close:before {
+    top: 1.125em;
+    left: -80%;
+    background-position: 0 -52px; }
+
+.site .mobile-menu-wrapper {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

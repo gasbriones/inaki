@@ -6,6 +6,7 @@ Template Name: como llegar
 
 get_header(); ?>
 <body <?php body_class('page-tpl'); ?>>
+<?php include 'menu-tpl.php'?>
 <div class="wrapper clearfix">
     <div class="grid-reverse site">
         <div class="col-5_lg-5_md-5_sm-12_xs-12 menu-wrapper">
@@ -21,5 +22,6 @@ get_header(); ?>
         </div>
     </div>
 </div>
+<?php get_footer();?>
 </body>
 </html>

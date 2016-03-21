@@ -21,6 +21,10 @@
   }
 
 
+  #menu-mobile-menu li a{
+    margin-left: 20%;
+  }
+
 
 }
 
@@ -56,6 +60,8 @@
   .mobile-menu-wrapper{
     width: 65%;
   }
+
+
 }
 
 
@@ -73,6 +79,11 @@
   .section-img.history-img-2::before{
     width: 45%;
   }
+
+  .logo{
+    margin-left: 0 !important;
+  }
+
 }
 
 
