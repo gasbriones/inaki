@@ -16,7 +16,6 @@ get_header();
     <section id="main" class="clearfix">
       <div class="grid-3-center">
         <div class="col-6_lg-7_md-7_sm-10_xs-12">
-
           <?php
             if ($query->have_posts()):
               while ($query->have_posts()):$query->the_post(); ?>

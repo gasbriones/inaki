@@ -10,10 +10,19 @@
     </div>
     <div class="col-9_lg-8_md-8_sm-7_xs-12">
       <ul class="social clearfix">
-        <li><a href="#" class="social-icon oleo"></a></li>
-        <li><a href="#" class="social-icon tripadvisor"></a></li>
-        <li><a href="#" class="social-icon google"></a></li>
-        <li><a href="#" class="social-icon facebook"></a></li>
+        <li class="hint--right" data-hint="Calificado como Excelente en Guía Oleo.">
+          <a href="http://www.guiaoleo.com.ar/restaurantes/Iniaki-2646 " class="social-icon oleo"></a>
+        </li>
+        <li  class="hint--right" data-hint="Certificado de excelencia en TripAdvisor.">
+          <a href="https://www.tripadvisor.com.ar/Restaurant_Review-g312741-d1232373-Reviews-Inaki-Buenos_Aires_Capital_Federal_District.html" class="social-icon tripadvisor tooltip"></a>
+        </li>
+        <li  class="hint--right" data-hint="Calificado 4.5 sobre 5 puntos en Google.">
+          <a href="https://www.google.com.ar/search?q=i%C3%B1aki+restaurante&oq=i%C3%B1aki+restaurante&aqs=chrome..69i57j69i60l3j69i61j69i59.2415j0j7&sourceid=chrome&es_sm=122&ie=UTF-8#safe=off&q=I%C3%B1aki+Restaurante" class="social-icon google tooltip"></a>
+        </li>
+        <li  class="hint--right" data-hint="Calificado 4.9 sobre 5 puntos en Facebook.">
+          <a href="https://www.facebook.com/I%C3%91AKI-Restaurante-1376024392658412/" class="social-icon facebook tooltip"></a>
+        </li>
+        <li id="tooltip-containter"></li>
       </ul>
     </div>
   </div>

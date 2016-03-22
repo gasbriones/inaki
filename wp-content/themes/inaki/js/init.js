@@ -118,7 +118,7 @@
         // loop through all markers and create bounds
         $.each(map.markers, function (i, marker) {
 
-            var latlng = new google.maps.LatLng(marker.position.lat()- 0.0030, marker.position.lng());
+            var latlng = new google.maps.LatLng(marker.position.lat() - 0.0030, marker.position.lng());
 
             bounds.extend(latlng);
 
@@ -152,7 +152,6 @@
 // global var
     var map = null;
 
-
     $(document).ready(function () {
         $('.close').on('click', function (e) {
             e.preventDefault();
@@ -167,6 +166,13 @@
 
         $('.acf-map').each(function () {
             map = new_map($(this));
+        });
+
+
+
+        $('.tooltip').tooltipster({
+            animation: 'grow',
+            theme: 'tooltipster-pink'
         });
     });
 

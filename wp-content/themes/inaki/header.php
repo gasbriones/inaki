@@ -26,6 +26,8 @@
   <meta name="og:country-name" content="Argentina"/>
 
   <!-- Links -->
+
+  <link href="<?php echo get_template_directory_uri(); ?>/css/hint.min.css" rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/gridlex.min.css" rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet" type="text/css">
@@ -43,8 +45,5 @@
 
   </script>
   <?php wp_head(); ?>
-
-
-
 </head>
 
