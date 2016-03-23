@@ -21,7 +21,22 @@
     margin-top: 0.9375em !important; }
     .icon-close:before {
       top: -0.3125em !important;
-      left: 30% !important; } }
+      left: 30% !important; }
+
+  .random-title {
+    font-size: 1.5em !important;
+    line-height: 1.25em;
+    top: 47% !important; }
+
+  .random-more {
+    font-size: 1em !important; }
+
+  .social {
+    float: none; }
+
+  #tooltip-containter {
+    float: none;
+    line-height: 1.25em; } }
 @media screen and (max-width: 48em) {
   .menu-wrapper {
     background: none; }
@@ -61,6 +76,20 @@
     width: 45%; }
 
   .logo {
-    margin-left: 0 !important; } }
+    margin-left: 0 !important; }
+
+  .random-title {
+    font-size: 2.375em; } }
+/*
+*Fixme
+*/
+@media (min-width: 35.5em) and (max-width: 48em) {
+  .random-title {
+    font-size: 2.5em !important;
+    line-height: 1.25em !important; } }
+@media (min-width: 48em) and (max-width: 64em) {
+  .random-title {
+    font-size: 2.5em !important;
+    line-height: 1.25em !important; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */
