@@ -19,7 +19,7 @@ get_header();
           <?php
             if ($query->have_posts()):
               while ($query->have_posts()):$query->the_post(); ?>
-                <a href="#" class="random-img">
+                <a href="<?php echo get_site_url();?>/la-carta" class="random-img">
                   <img src="<?php echo the_field('imagen_plato') ?>"/>
                   <span class="random-title"><?php echo the_title() ?></span>
                   <span class="random-more">Ver más platos >></span>

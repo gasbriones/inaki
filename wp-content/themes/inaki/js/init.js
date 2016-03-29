@@ -118,7 +118,7 @@
         // loop through all markers and create bounds
         $.each(map.markers, function (i, marker) {
 
-            var latlng = new google.maps.LatLng(marker.position.lat() - 0.0030, marker.position.lng());
+            var latlng = new google.maps.LatLng(marker.position.lat() - 0.0020, marker.position.lng());
 
             bounds.extend(latlng);
 
@@ -153,26 +153,36 @@
     var map = null;
 
     $(document).ready(function () {
+
+        //Init animation scroll
+        new WOW().init();
+
+        //Close menu animation
         $('.close').on('click', function (e) {
             e.preventDefault();
             $('.mobile-menu-wrapper').animate({right: '-100%'}, 750)
         });
 
+        //Init acordeon
+        $('.the-card .products-list').hoverAccordion({ activateItem: 3});
+
+        //Menu animation
         $('.menu-icon').on('click', function (e) {
             e.preventDefault();
             $('.mobile-menu-wrapper').animate({right: '0%'}, 750);
 
-        })
+        });
 
+        //map init
         $('.acf-map').each(function () {
             map = new_map($(this));
         });
 
+        //tooltip init
         $('.tooltip').hover(function () {
             $('#tooltip-containter').html($(this).data('text')).stop().animate({
                 marginLeft: '10px',
                 opacity: 1
-
             }, 250);
         }, function () {
             $('#tooltip-containter').stop().animate({
@@ -180,5 +190,25 @@
                 opacity: 0
             }, 250);
         });
+
+        //Remove hover event in mobile devise
+
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            try { // prevent crash on browsers not supporting DOM styleSheets properly
+                for (var si in document.styleSheets) {
+                    var styleSheet = document.styleSheets[si];
+                    if (!styleSheet.rules) continue;
+
+                    for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                        if (!styleSheet.rules[ri].selectorText) continue;
+
+                        if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                            styleSheet.deleteRule(ri);
+                        }
+                    }
+                }
+            } catch (ex) {}
+        }
     });
 })(jQuery);

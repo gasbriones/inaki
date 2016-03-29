@@ -41,6 +41,7 @@ body {
   position: relative;
 
 }
+
 .site {
   margin: 0;
   box-sizing: border-box;
@@ -180,15 +181,33 @@ body {
   font-family: andralis;
   margin: (50em/16) 9%;
   line-height: (22em/16);
+
+}
+
+.the-history{
+  .paragraph {
+    position: relative;
+    &:last-child{
+      &:before{
+        content: "";
+        height: (11em/16);
+        width: 100%;
+        left: 0;
+        bottom: (-50em/16);
+        position: absolute;
+        background: url("../images/miscelanea.png") no-repeat;
+      }
+    }
+  }
 }
 
 .section-img {
   position: relative;
-  box-shadow: 10px 25px 40px -16px #000;
+  box-shadow: 10px 25px 80px -16px #000;
   width: 125%;
   z-index: 999;
 
-  &:before {
+  .deco-img {
     position: absolute;
     top: 38%;
     right: -50%;
@@ -197,21 +216,16 @@ body {
     background-size: contain !important;
   }
 
-  &.history-img-1 {
-
-    &:before {
-      width: (338em/16);
-      height: (146em/16);
-      background: url("../images/history-img-legend-1.png") no-repeat;
-    }
+  .history-img-1 {
+    width: (338em/16);
+    height: (146em/16);
+    background: url("../images/history-img-legend-1.png") no-repeat;
 
   }
-  &.history-img-2 {
-    &:before {
-      width: (377em/16);
-      height: (127em/16);
-      background: url("../images/history-img-legend-2.png") no-repeat;
-    }
+  .history-img-2 {
+    width: (377em/16);
+    height: (127em/16);
+    background: url("../images/history-img-legend-2.png") no-repeat;
   }
 }
 
@@ -231,15 +245,21 @@ body {
     }
   }
   .products-details {
+    position: relative;
+    .product-img{
+      z-index: 999999;
+      width: 100%;
+    }
     .product-title {
       color: #ED1C24;
       font-size: (24em/16);
       font-weight: bold;
+      text-decoration: none;
     }
 
     .product-description{
       p{
-        margin: (20em/16) 0;
+        margin: (15em/16) 0;
       }
     }
   }
@@ -253,7 +273,7 @@ body {
   right: -100%;
   min-height: 100%;
   background: url("../images/pattern-bg-rojo.jpg");
-  background-size: contain;
+  background-size: cover;
   text-transform: uppercase;
   margin: 0;
   width: 45%;
@@ -295,6 +315,19 @@ body {
   margin-top: (20em/16);
   li{
     border-bottom: dotted 2px #B24242;
+    position: relative;
+    &:hover:not(.icon-inaki){
+      &:before{
+        position: absolute;
+        content: "";
+        top:(8em/16);
+        left: 3%;
+        background: url("../images/menu-icons.png") no-repeat;
+        width: (24em/16);
+        height: (26em/16);
+      }
+    }
+
     a{
       margin-left: 13%;
     }
@@ -313,11 +346,6 @@ body {
     height: (26em/16);
   }
 
-  &.icon-history{
-    &:before{
-      top:(8em/16);
-    }
-  }
   &.icon-inaki{
     &:before{
       top:(8em/16);
@@ -361,6 +389,11 @@ body {
 
 .acf-map {
  @include aspect-ratio(16, 9);
+  position: relative;
+  box-shadow: 10px 25px 80px -16px #000;
+  width: 125%;
+  z-index: 999;
+  margin-top: (40em/16);
 }
 
 .random-img{
@@ -445,3 +478,10 @@ body {
     z-index: 99;
   }
 }
+
+.in-house{
+  .page-title{
+    margin-bottom: (60em/16);
+  }
+}
+

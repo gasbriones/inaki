@@ -21,24 +21,24 @@ get_header(); ?>
         <div class="col-7_lg-7_md-7_sm-12_xs-12 content-wrapper">
             <section class="content">
                 <h2 class="page-title"><?php the_title(); ?></h2>
-                <div>
+                <div class="the-card">
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                         <article class="paragraph">
                             <?php the_content(); ?>
                         </article>
-                        <div class="section-img">
-                            <img src="<?php echo the_field('imagen_1_la_carta') ?>"/>
-                        </div>
                         <div class="products">
                             <ul class="products-list">
                                 <?php
                                 if ($query->have_posts()):
                                     while ($query->have_posts()):$query->the_post();
                                         ?>
-                                        <li>
-                                            <ul class="products-details">
-                                                <li class="product-title"><?php the_title(); ?></li>
-                                                <li class="product-description"><?php the_content(); ?></li>
+                                        <li class="products-details">
+                                            <a href="#" class="product-title"><?php the_title(); ?></a>
+                                            <span class="product-description"><?php the_content(); ?></span>
+                                            <ul>
+                                                <li class="product-img">
+                                                    <img src="<?php echo the_field('imagen_plato') ?>"/>
+                                                </li>
                                             </ul>
                                         </li>
                                     <?php endwhile;

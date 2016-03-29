@@ -61,7 +61,10 @@
       margin: 0 15%; }
 
   .mobile-menu-wrapper {
-    width: 65%; } }
+    width: 65%; }
+
+  .acf-map {
+    width: 100%; } }
 @media screen and (max-width: 64em) {
   .logo {
     float: right; }
