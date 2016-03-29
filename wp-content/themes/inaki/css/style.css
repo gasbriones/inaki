@@ -166,6 +166,8 @@ body {
     margin-bottom: 1.25em; }
     .products-list > li:last-child {
       border-bottom: none; }
+  .products-list .product-img-container {
+    height: inherit !important; }
   .products-list .products-details {
     position: relative; }
     .products-list .products-details .product-img {

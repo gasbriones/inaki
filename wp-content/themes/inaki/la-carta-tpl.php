@@ -35,7 +35,7 @@ get_header(); ?>
                                         <li class="products-details">
                                             <a href="#" class="product-title"><?php the_title(); ?></a>
                                             <span class="product-description"><?php the_content(); ?></span>
-                                            <ul>
+                                            <ul class="product-img-container">
                                                 <li class="product-img">
                                                     <img src="<?php echo the_field('imagen_plato') ?>"/>
                                                 </li>

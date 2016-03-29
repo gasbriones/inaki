@@ -244,6 +244,11 @@ body {
       border-bottom:none;
     }
   }
+
+  .product-img-container{
+    height: inherit !important;
+  }
+
   .products-details {
     position: relative;
     .product-img{
